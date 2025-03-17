@@ -7,7 +7,7 @@
 print('--> Argumentos Variables <---')
 
 # Aqui se implementas estas funcionaes quereciben con argumento "*args" estos se pasaran en formato de una tupla por lo que es importante
-#
+# Cabe destacar es el argumento args si o si debe ser el ultimo parametro, esta tupla
 def superheroe_superpoderes(superheroe, nombre, *args):
     print(f'Superheroe: {superheroe} - {nombre} - {args}')
     # Iteramos los superpoderes
@@ -18,5 +18,6 @@ def superheroe_superpoderes(superheroe, nombre, *args):
 superheroe_superpoderes('Spiderman', 'Peter Parker', 'Instinto Arácnido', 'Teleraña')
 superheroe_superpoderes('Ironam', 'Tony Stark', 'Armadura','Playboy','Millonario')
 
-# Es opcional enviar argumentos variables
+# Es opcional enviar argumentos variables, por lo que podemos declararlo en la funcion pero simplemente pasar del mismo cuando
+# sea necesario en el mismo. Por lo que no nos generara ningun error en caso de que simplemente no lo utizemos.
 superheroe_superpoderes('Mi vecino', 'Juan Perez')
